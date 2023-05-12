@@ -37,7 +37,7 @@ const VideosSection = ({ data, loading }) => {
                             }}
                             >
                             <div className="videoThumbNail">
-                                <img src={`https://img.youtube.com/vi/${video.key}/mqdefault.jpg`}/>
+                                <Img src={`https://img.youtube.com/vi/${video.key}/mqdefault.jpg`}/>
                                 
                             </div>
                             <div className="videoTitle">
