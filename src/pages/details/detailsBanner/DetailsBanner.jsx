@@ -11,7 +11,7 @@ import useFetch from "../../../hooks/useFetch";
 import Genres from "../../../components/Genres/Genres";
 import CircleRating from "../../../components/circuleRating/CircleRating";
 // import Img from "../../../components/lazyloadimage/Img.jsx";
-import Img from "../../../components/lazyloadimage/Img";
+
 import PosterFallback from "../../../assets/no-poster.png";
 import { PlayIcon } from "./PlyBtn"
 
