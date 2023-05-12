@@ -15,7 +15,7 @@ const HeroBanner = () => {
   useEffect(() => {
     const bg = url.backdrop+data?.results?.[Math.floor(Math.random()*20)]?.backdrop_path
           setBackground(bg);  
-    // question? mark useing for optional chainig
+    // question? mark using for optional chainig
     // we use if data is empty or undefined so its not generate error
   },[data]) // to getting background image from api calling and random images 
   //so use math objects
