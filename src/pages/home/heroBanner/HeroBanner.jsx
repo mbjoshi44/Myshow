@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import React, {useEffect, useState} from 'react'
 import "./heraBanner.scss";
 import { useNavigate } from 'react-router-dom'
@@ -15,8 +14,7 @@ const HeroBanner = () => {
 
   useEffect(() => {
     const bg = url.backdrop+data?.results?.[Math.floor(Math.random()*20)]?.backdrop_path
-          setBackground(bg);
-          console.log(background);  
+          setBackground(bg);  
     // question? mark useing for optional chainig
     // we use if data is empty or undefined so its not generate error
   },[data]) // to getting background image from api calling and random images 
@@ -32,7 +30,7 @@ const HeroBanner = () => {
   return (
     <div className='heroBanner'>
    {!loading && <div className="backdrop-img">
-      <Img src={background}/>
+      <img src={background}/>
     </div>
    }
 
