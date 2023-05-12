@@ -4,8 +4,8 @@ import { useSelector, useDispatch } from 'react-redux'
 import { getApiConfiguretion, getGenres } from './store/homeSlice'
 import { BrowserRouter,Route,Routes } from 'react-router-dom'
 
-
-import Home from './pages/home/home';
+import Home from './pages/home/Home'
+// import Home from './pages/home/home';
 import Footer from './components/footer/footer'
 import Header from './components/header/header'
 import Details from './pages/details/Details'
