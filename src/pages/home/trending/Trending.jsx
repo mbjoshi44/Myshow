@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import ContentWrapper from '../../../components/contentWrapper/ContectWrapper'
  import SwtichTabs from '../../../components/switchTabs/SwtichTabs'
  import useFetch from '../../../hooks/useFetch'
- import Carousel from '../../../components/carousal/carousel'
+ import Carousel from '../../../components/carousal/Carousel'
 function Trending() {
      const[endpoint,setEndPoint] = useState("day"); 
      const{data,loading} = useFetch(`/trending/all/${endpoint}`);
