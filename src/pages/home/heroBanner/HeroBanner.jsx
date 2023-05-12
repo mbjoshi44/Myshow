@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, {useEffect, useState} from 'react'
 import "./heraBanner.scss";
 import { useNavigate } from 'react-router-dom'
@@ -61,4 +62,4 @@ const HeroBanner = () => {
   )
 }
 
-export default HeroBanner000
+export default HeroBanner
