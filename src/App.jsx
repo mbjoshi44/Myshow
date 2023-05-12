@@ -6,10 +6,10 @@ import { BrowserRouter,Route,Routes } from 'react-router-dom'
 
 import Home from './pages/home/Home'
 // import Home from './pages/home/home';
-import Footer from './components/footer/footer'
-import Header from './components/header/header'
+import Footer from './components/footer/Footer'
+import Header from './components/header/Header'
 import Details from './pages/details/Details'
-import SearchResult from './pages/searchResult/searchResult'
+import SearchResult from './pages/searchResult/SearchResult'
 import Explore from './pages/explore/Explore'
 import PageNotFound from './pages/404/PageNotFound'
 
