@@ -38,7 +38,7 @@ const VideosSection = ({ data, loading }) => {
                                 }}
                             >
                                 <div className="videoThumbnail">
-                                    <Img
+                                    <img
                                         src={`https://img.youtube.com/vi/${video.key}/mqdefault.jpg`}
                                     />
                                     <PlayIcon />
