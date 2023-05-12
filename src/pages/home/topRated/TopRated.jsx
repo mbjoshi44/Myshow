@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import ContentWrapper from '../../../components/contentWrapper/ContectWrapper'
  import SwtichTabs from '../../../components/switchTabs/SwtichTabs'
  import useFetch from '../../../hooks/useFetch'
- import Carousel from '../../../components/carousal/carousel'
+ import Carousel from '../../../components/carousal/Carousel'
 function TopRated() {
      const[endpoint,setEndPoint] = useState("movie"); 
      const{data,loading} = useFetch(`/${endpoint}/top_rated`);
