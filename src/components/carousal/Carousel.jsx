@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import dayjs from "dayjs";  //set the format for date 
 import ContentWrapper from "../contentWrapper/ContectWrapper";
-import Img from "../lazyloadimage/Img";
+// import Img from "../lazyloadimage/Img";
 import PosterFallback from "../../assets/no-poster.png";
  import CircleRating from "../circuleRating/CircleRating";
 import "./carousel.scss";
@@ -70,7 +70,7 @@ const Carousel = ({data , loading , endpoint ,title}) => {
                          className="carouselItem"
                          onClick={() => navigate(`/${item.media_type || endpoint}/${item.id}`)}>
                                 <div className="posterBlock">
-                                    <Img src={posterUrl}/>
+                                    <img src={posterUrl}/>
                                     <CircleRating rating={item.vote_average.toFixed(1)}/>
                                     <Genres data ={ item.genre_ids.slice(0,2)}/>
                                 </div>
