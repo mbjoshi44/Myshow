@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import dayjs from "dayjs";  //set the format for date 
 import ContentWrapper from "../contentWrapper/ContectWrapper";
-import Img from "../lazyLoadImage/Img";
+import Img from "../lazyloadimage/Img";
 import PosterFallback from "../../assets/no-poster.png";
  import CircleRating from "../circuleRating/CircleRating";
 import "./carousel.scss";
