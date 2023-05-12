@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import dayjs from "dayjs";
 import { useNavigate } from "react-router-dom";
@@ -6,7 +7,8 @@ import { useSelector } from "react-redux";
 import "./MovieCard.scss";
 // import Img from "../lazyloadimage/Img";
 
-import Genres from "../genres/Genres";
+// import Genres from "../genres/Genres";
+import Genres from "../Genres/Genres";
 import PosterFallback from "../../assets/no-poster.png";
 import CircleRating from "../circuleRating/CircleRating";
 
