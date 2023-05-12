@@ -41,7 +41,7 @@ const DetailsBanner = ({ video, crew }) => {
                         // then we chek the condition
                         <React.Fragment>
                             <div className="backdrop-img">
-                                <Img src={url.backdrop + data.backdrop_path} />
+                                <img src={url.backdrop + data.backdrop_path} />
 
                             </div>
                             <div className="opacity-layer"></div>
@@ -50,12 +50,12 @@ const DetailsBanner = ({ video, crew }) => {
                                     <div className="left">
                                         {
                                             data.poster_path ? (
-                                                <Img
+                                                <img
                                                     className="posterImg"
                                                     src={url.backdrop + data.poster_path} />
 
                                             ) : (
-                                                <Img
+                                                <img
                                                     className="posterImg"
                                                     src={PosterFallback} />
                                             )
