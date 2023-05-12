@@ -70,7 +70,7 @@ const Carousel = ({data , loading , endpoint ,title}) => {
                          className="carouselItem"
                          onClick={() => navigate(`/${item.media_type || endpoint}/${item.id}`)}>
                                 <div className="posterBlock">
-                                    <img src={posterUrl}/>
+                                    <Img src={posterUrl}/>
                                     <CircleRating rating={item.vote_average.toFixed(1)}/>
                                     <Genres data ={ item.genre_ids.slice(0,2)}/>
                                 </div>
