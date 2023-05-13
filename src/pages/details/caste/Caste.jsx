@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 import { useSelector } from "react-redux";
-
 import "./caste.scss";
 
 import avatar from "../../../assets/avatar.png";
 import ContentWrapper from "../../../components/contentWrapper/ContectWrapper";
+import Img from "../../../components/lazyloadimage/Img";
 
 const Cast = ({ data, loading }) => {
     const { url } = useSelector((state) => state.home);
@@ -31,7 +31,7 @@ const Cast = ({ data, loading }) => {
                                 return(
                                     <div key={item.id} className="listItem">
                                              <div className="profileImg">
-                                                <img src={imgUrl}/>
+                                                <Img src={imgUrl}/>
                                              </div>
                                              <div className="name">
                                                 {item.name}

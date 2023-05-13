@@ -1,7 +1,4 @@
 import React , {useState , useEffect} from 'react'
-// import MovieCard from "../../components/movieCard/MovieCard";
-
-import noResults from "../../assets/no-results.png"
 import './searchResult.scss';
 import { useParams } from 'react-router-dom';
 import InfiniteScroll from 'react-infinite-scroll-component';

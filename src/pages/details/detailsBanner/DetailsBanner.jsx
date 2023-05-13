@@ -10,7 +10,7 @@ import ContentWrapper from "../../../components/contentWrapper/ContectWrapper";
 import useFetch from "../../../hooks/useFetch";
 import Genres from "../../../components/Genres/Genres";
 import CircleRating from "../../../components/circuleRating/CircleRating";
-// import Img from "../../../components/lazyloadimage/Img.jsx";
+import Img from "../../../components/lazyloadimage/Img.jsx";
 
 import PosterFallback from "../../../assets/no-poster.png";
 import { PlayIcon } from "./PlyBtn"
@@ -41,7 +41,7 @@ const DetailsBanner = ({ video, crew }) => {
                         // then we chek the condition
                         <React.Fragment>
                             <div className="backdrop-img">
-                                <img src={url.backdrop + data.backdrop_path} />
+                                <Img src={url.backdrop + data.backdrop_path} />
 
                             </div>
                             <div className="opacity-layer"></div>
@@ -50,12 +50,12 @@ const DetailsBanner = ({ video, crew }) => {
                                     <div className="left">
                                         {
                                             data.poster_path ? (
-                                                <img
+                                                <Img
                                                     className="posterImg"
                                                     src={url.backdrop + data.poster_path} />
 
                                             ) : (
-                                                <img
+                                                <Img
                                                     className="posterImg"
                                                     src={PosterFallback} />
                                             )
